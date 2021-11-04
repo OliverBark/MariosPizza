@@ -15,9 +15,9 @@ public class Main {
     @SuppressWarnings("InfiniteLoopStatement")
     public static void main(String[] args) throws IOException {
 
-    while (true)
-
+    while (true) {
         menu();
+    }
     }
 
     public static void menu() throws IOException {
