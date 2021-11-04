@@ -1,13 +1,13 @@
 package OliverBark;
 
 public class Bestilling {
-    int tid;
+    double tid;
     int pizzaNr;
     String navn;
     int tlf;
     int id;
 
-    public Bestilling(int tid, int pizzaNr, String navn, int tlf, int id) {
+    public Bestilling(double tid, int pizzaNr, String navn, int tlf, int id) {
         this.tid = tid;
         this.pizzaNr = pizzaNr;
         this.navn = navn;
@@ -16,12 +16,11 @@ public class Bestilling {
     }
 
 
-
-    public int getTid() {
+    public double getTid() {
         return tid;
     }
 
-    public void setTid(int tid) {
+    public void setTid(double tid) {
         this.tid = tid;
     }
 
@@ -60,14 +59,11 @@ public class Bestilling {
         this.id = id;
     }
 
+
     @Override
     public String toString() {
-        return "Bestilling{" +
-                "tid=" + tid +
-                ", pizzanr=" + pizzaNr +
-                ", navn='" + navn + '\'' +
-                ", tlf=" + tlf +
-                '}';
+        return "Bestilling: " + "id: " + id + " Tid: " + tid + " Pizza nummer: " + pizzaNr +
+                " Navn: " + navn + " Telefon: " + tlf;
     }
 }
 
