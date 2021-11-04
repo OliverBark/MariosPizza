@@ -1,0 +1,15 @@
+1.  "Vesuvio"         Tomat, Ost, Origano, Skinke                                 57kr
+2.  "Amerikaner"      Tomat, Ost, Oksefars, Oregano                               53kr
+3.  "Cacciatore"      Tomat, Ost, Pepperoni, Oregano                              57kr
+4.  "Carbona"         Tomat, Ost, Kødsovs, Spagetti, Pølser, Oregano              63kr
+5.  "Dennis"          Tomat, Ost, Skinke, Pepperoni, Pølser, Oregano              65kr
+6.  "Bertil"          Tomat, Ost, Skinke, Bacon, Oregano                          57kr
+7.  "Silvia"          Tomat, Ost, Pepperoni, Rød peber, Løg, Oliven, Oregano      61kr
+8,  "Victoria"        Tomat, Ost, Skinke, Ananas, Champignon, Løg, Oregano        61kr
+9.  "Toronfo"         Tomat, Ost, Skinke, Bacon, Kebab, Chili, Oregano            61kr
+10. "Capricciosa"     Tomat, Ost, Skinke, Champignon, Oregano                     61kr
+11. "Hawaii"          Tomat, Ost, Skinke, Ananas, Oregano                         61kr
+12. "Le Blissola"     Tomat, Ost, Skinke, Rejer, Oregano                          61kr
+13. "Venezia"         Tomat, Ost, Skinke, Bacon, Oregano                          61kr
+14. "Mafia"           Tomat, Ost, Pepperoni, Bacon, Løg, Oregano                  61kr
+15. "Mexican Handgun" Tomat, Ost, Kalkun, Pesto, Chilli, Dressing, rocula         61kr

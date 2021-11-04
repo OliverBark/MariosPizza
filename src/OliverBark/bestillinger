@@ -1,0 +1,3 @@
+Bestilling{tid=1, pizzanr=1, navn='1', tlf=1}
+Bestilling{tid=2, pizzanr=2, navn='2', tlf=2}
+Bestilling{tid=3, pizzanr=3, navn='3', tlf=3}
