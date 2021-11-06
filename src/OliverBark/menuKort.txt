@@ -1,16 +1,34 @@
-1.  "Vesuvio"         Tomat, Ost, Origano, Skinke                                 57kr
-2.  "Amerikaner"      Tomat, Ost, Oksefars, Oregano                               53kr
-3.  "Cacciatore"      Tomat, Ost, Pepperoni, Oregano                              57kr
-4.  "Carbona"         Tomat, Ost, Kødsovs, Spagetti, Pølser, Oregano              63kr
-5.  "Dennis"          Tomat, Ost, Skinke, Pepperoni, Pølser, Oregano              65kr
-6.  "Bertil"          Tomat, Ost, Skinke, Bacon, Oregano                          57kr
-7.  "Silvia"          Tomat, Ost, Pepperoni, Rød peber, Løg, Oliven, Oregano      61kr
-8,  "Victoria"        Tomat, Ost, Skinke, Ananas, Champignon, Løg, Oregano        61kr
-9.  "Toronfo"         Tomat, Ost, Skinke, Bacon, Kebab, Chili, Oregano            61kr
-10. "Capricciosa"     Tomat, Ost, Skinke, Champignon, Oregano                     61kr
-11. "Hawaii"          Tomat, Ost, Skinke, Ananas, Oregano                         61kr
-12. "Le Blissola"     Tomat, Ost, Skinke, Rejer, Oregano                          61kr
-13. "Venezia"         Tomat, Ost, Skinke, Bacon, Oregano                          61kr
-14. "Mafia"           Tomat, Ost, Pepperoni, Bacon, Løg, Oregano                  61kr
-15. "Mexican Handgun" Tomat, Ost, Kalkun, Pesto, Chilli, Dressing, rocula         61kr
+1.  "Vesuvio"         Tomat, Ost, Origano, Skinke                                           57kr
+2.  "Amerikaner"      Tomat, Ost, Oksefars, Oregano                                         53kr
+3.  "Cacciatore"      Tomat, Ost, Pepperoni, Oregano                                        57kr
+4.  "Carbona"         Tomat, Ost, Kødsovs, Spagetti, Pølser, Oregano                        63kr
+5.  "Dennis"          Tomat, Ost, Skinke, Pepperoni, Pølser, Oregano                        65kr
+6.  "Bertil"          Tomat, Ost, Skinke, Bacon, Oregano                                    57kr
+7.  "Silvia"          Tomat, Ost, Pepperoni, Rød peber, Løg, Oliven, Oregano                61kr
+8,  "Victoria"        Tomat, Ost, Skinke, Ananas, Champignon, Løg, Oregano                  61kr
+9.  "Toronfo"         Tomat, Ost, Skinke, Bacon, Kebab, Chili, Oregano                      61kr
+10. "Capricciosa"     Tomat, Ost, Skinke, Champignon, Oregano                               61kr
+11. "Hawaii"          Tomat, Ost, Skinke, Ananas, Oregano                                   61kr
+12. "Le Blissola"     Tomat, Ost, Skinke, Rejer, Oregano                                    61kr
+13. "Venezia"         Tomat, Ost, Skinke, Bacon, Oregano                                    61kr
+14. "Mafia"           Tomat, Ost, Pepperoni, Bacon, Løg, Oregano                            61kr
+15. "Mexican Handgun" Tomat, Ost, Kalkun, Pesto, Chilli, Dressing, rocula                   61kr
+14. "Nario Chorizo"   Tomat, Ost, Cocktailpølser, Bacon, Løg                                67kr
+15. "Diavola"         Tomat, Ost, Pepperoni, Champignon, Gorgonzola                         67kr
+16. "La Salami"       Tomat, Ost, Pepperoni, Skinke, Bacon                                  63kr
+17. "Tina"            Tomat, Ost, Pepperoni, Paprika, Jalapenos                             65kr
+18. "Felix Pepperoni" Tomat, Ost, Pepperoni, Løg                                            61kr
+19. "Pasqualino"      Tomat, Ost, Pepperoni, Ananas                                         65kr
+20. "Sole"            Tomat, Ost, Bacon, Skinke, Æg, Paprika, Chili, Hvidløg                64kr
+21. "Amadora"         Tomat, Ost, Kebab, Champignon, Paprika, Chili                         65kr
+22. "Tonno"           Tomat, Ost, Tun                                                       67kr
+23. "Vegetariana Uno" Tomat, Ost, Artiskok, Oliven, Champignon, Paprika, Ananas             70kr
+24. "Camilla"         Tomat, Ost, Fetaost, Pepperoni, friske Tomatskiver                    67kr
+25. "Lina"            Tomat, Ost, Hk. Oksekød, Paprika, Champignon                          65kr
+26. "Mix"             Tomat, Ost, Cocktailpølser, Skinke, Bacon, Æg                         65kr
+27. "Lux"             Tomat, Ost, Kødstrimler, Paprika, Champignon, Løg, Bearnaisesauce     70kr
+28. "Torino"          Tomat, Ost, Kebab, Pepperoni, Bacon                                   67kr
+29. "Castro"          Tomat, Ost, Kødsauce, Pepperoni, Skinke                               70kr
+30. "Salat pizza"     Tomat, Ost, Valgfrit Kød, Salat                                       69kr
+
 

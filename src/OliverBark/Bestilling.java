@@ -62,7 +62,7 @@ public class Bestilling {
 
     @Override
     public String toString() {
-        return "Bestilling: " + "id: " + id + " Tid: " + tid + " Pizza nummer: " + pizzaNr +
+        return "Bestilling: " + " id: " + id + " Tid: " + tid + " Pizza nummer: " + pizzaNr +
                 " Navn: " + navn + " Telefon: " + tlf;
     }
 }

@@ -12,12 +12,11 @@ import java.util.Scanner;
 
 public class Main {
 
-    @SuppressWarnings("InfiniteLoopStatement")
     public static void main(String[] args) throws IOException {
 
-    while (true) {
-        menu();
-    }
+        do {
+            menu();
+        } while (true);
     }
 
     public static void menu() throws IOException {
@@ -25,14 +24,13 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
 
-
         System.out.println("___//Marios PizzaBar\\\\___");
         System.out.println("Dine valgmuligheder");
-        System.out.println("Tast v for at se vores menu");
-        System.out.println("Tast o for at oprette din ordre");
+        System.out.println("Tast v for at se menu");
+        System.out.println("Tast o for at oprette ordre");
         System.out.println("Tast b for at vise bestillingsliste");
         System.out.println("Tast s for at slette en ordre");
-        System.out.println("Tast e for at afslutte din bestilling");
+        System.out.println("Tast h for at hente ordrehisorik");
 
 
         String s = input.next();
@@ -41,12 +39,10 @@ public class Main {
             case "o" -> opretOrdre();
             case "b" -> visBestillingsliste();
             case "s" -> sletOrdre();
-            case "e" -> afslutOrdre();
+            case "h" -> ordreHistorik();
         }
 
     }
-
-
 
 
     public static void visMenu() {
@@ -63,7 +59,7 @@ public class Main {
         }
     }
 
-    public static void opretOrdre() {
+    public static void opretOrdre() throws IOException {
         Scanner console = new Scanner(System.in).useLocale(Locale.ENGLISH);
 
         System.out.println("Indtast tid (med punktum)");
@@ -75,11 +71,10 @@ public class Main {
         String name = console.nextLine();
         System.out.println("Indtast telefon nr ");
         int tlf = console.nextInt();
-        int id = 1;
+        int id = 0;
         id++;
-        System.out.println("Du har fået ordrenummer: " + id) ;
+        System.out.println("Ordrenummer: " + id);
 
-        
 
         Bestilling b1 = new Bestilling(tid, pizzaNr, name, tlf, id);
 
@@ -89,18 +84,22 @@ public class Main {
         try {
             File file = new File("src/OliverBark/bestillinger");
             FileWriter fw = new FileWriter(file, true);
-            //konverter en int til en string
             fw.append(b1.toString());
             fw.append("\n");
-
-            //close document
             fw.close();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
+        try {
+            File ordreHistorik = new File("src/OliverBark/OrdreHistorik");
+            FileWriter fe = new FileWriter(ordreHistorik, true);
+            fe.append(b1.toString());
+            fe.append("\n");
+            fe.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void visBestillingsliste() {
@@ -119,7 +118,8 @@ public class Main {
         }
     }
 
-    public static void sletOrdre() throws IOException{
+    public static void sletOrdre() throws IOException { //Fået hjælp af https://stackoverflow.com/questions/1377279/find-a-line-in-a-file-and-remove-it
+
 
         try {
             File menu = new File("src/OliverBark/bestillinger");
@@ -133,7 +133,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println("Indtast dit ordrenummer");
+        System.out.println("Indtast navnet på den ordre der skal slettes");
 
 
         Scanner input = new Scanner(System.in);
@@ -143,13 +143,12 @@ public class Main {
         BufferedReader reader = new BufferedReader(new FileReader(inputFile));
         BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
 
-        int lineToRemove = input.nextInt();
+        String lineToRemove = input.nextLine();
         String currentLine;
-        int count = 0;
 
         while ((currentLine = reader.readLine()) != null) {
-            count++;
-            if (count == lineToRemove) {
+
+            if (currentLine.contains(lineToRemove)) {
                 continue;
             }
             writer.write(currentLine + System.getProperty("line.separator"));
@@ -160,27 +159,25 @@ public class Main {
         tempFile.renameTo(inputFile);
 
         System.out.println("Ordren er slettet");
-        System.out.println("\nHer er den nye bestillingsliste");
-
-        try {
-            File menu = new File("src/OliverBark/bestillinger");
-            Scanner myReader1 = new Scanner(menu);
-            while (myReader1.hasNextLine()) {
-                String data = myReader1.nextLine();
-                System.out.println(data);
-            }
-            myReader1.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        System.out.println("Her er den nye bestillingsliste");
+        System.out.println(" ");
+        visBestillingsliste();
         System.out.println(" ");
 
     }
-    public static void afslutOrdre() {
-        System.out.println("Tak for at handle hos Marios Pizza, din ordre kommer på det ønskede tidspunkt");
-        System.exit(0);
+
+    public static void ordreHistorik() throws IOException {
+        try {
+            File ordreHis = new File("src/OliverBark/OrdreHistorik");
+            Scanner sc = new Scanner(ordreHis);
+            while (sc.hasNextLine()) {
+                String input = sc.nextLine();
+                System.out.println(input);
+            }
+            sc.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println("\n\n");
     }
 }
-
-
-
