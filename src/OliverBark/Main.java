@@ -26,7 +26,7 @@ public class Main {
 
         System.out.println("___//Marios PizzaBar\\\\___");
         System.out.println("Dine valgmuligheder");
-        System.out.println("Tast v for at se menu");
+        System.out.println("Tast m for at se menu");
         System.out.println("Tast o for at oprette ordre");
         System.out.println("Tast b for at vise bestillingsliste");
         System.out.println("Tast s for at slette en ordre");
@@ -35,7 +35,7 @@ public class Main {
 
         String s = input.next();
         switch (s) {
-            case "v" -> visMenu();
+            case "m" -> visMenu();
             case "o" -> opretOrdre();
             case "b" -> visBestillingsliste();
             case "s" -> sletOrdre();
